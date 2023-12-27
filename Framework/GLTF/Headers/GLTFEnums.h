@@ -14,7 +14,7 @@
 //  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger, GLTFDataType) {
     GLTFBaseTypeUnknown,

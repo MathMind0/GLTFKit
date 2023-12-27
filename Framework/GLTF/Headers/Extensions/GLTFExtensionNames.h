@@ -14,7 +14,7 @@
 //  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
 extern NSString *const GLTFExtensionKHRMaterialsPBRSpecularGlossiness;
 extern NSString *const GLTFExtensionKHRLights;

@@ -14,10 +14,10 @@
 //  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
-#import "GLTFObject.h"
-#import "GLTFEnums.h"
+#import <GLTF/GLTFObject.h>
+#import <GLTF/GLTFEnums.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

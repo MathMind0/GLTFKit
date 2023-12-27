@@ -14,7 +14,7 @@
 //  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
-#import "GLTFUtilities.h"
+#import <GLTFUtilities.h>
 
 bool GLTFBoundingBoxIsEmpty(GLTFBoundingBox b) {
     return (b.minPoint.x == b.maxPoint.x) && (b.minPoint.y == b.maxPoint.y) && (b.minPoint.z == b.maxPoint.z);

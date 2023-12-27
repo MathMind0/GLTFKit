@@ -15,7 +15,7 @@
 //
 
 #import "GLTFTexture.h"
-#import "GLTFUtilities.h"
+#import <GLTFUtilities.h>
 
 GLTFTextureTransform GLTFTextureTransformMakeIdentity(void) {
     GLTFTextureTransform t = {

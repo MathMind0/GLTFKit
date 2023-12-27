@@ -69,7 +69,7 @@
 - (void)setView:(NSView *)view {
     [super setView:view];
     
-    self.sampleCount = 4;
+    self.sampleCount = 1;
     self.colorPixelFormat = MTLPixelFormatRGBA16Float;
     self.depthStencilPixelFormat = MTLPixelFormatDepth32Float;
     
@@ -100,7 +100,7 @@
     self.metalView.delegate = self;
     self.metalView.device = self.device;
     
-    self.metalView.sampleCount = 4;
+    self.metalView.sampleCount = 1;
     self.metalView.clearColor = MTLClearColorMake(0.25, 0.25, 0.25, 1.0);
     self.metalView.colorPixelFormat = MTLPixelFormatBGRA8Unorm_sRGB;
     
@@ -128,7 +128,7 @@
     MTLRenderPipelineDescriptor *descriptor = [MTLRenderPipelineDescriptor new];
     descriptor.vertexFunction = [self.library newFunctionWithName:@"skybox_vertex_main"];
     descriptor.fragmentFunction = [self.library newFunctionWithName:@"skybox_fragment_main"];
-    descriptor.sampleCount = self.metalView.sampleCount;
+    descriptor.rasterSampleCount = self.metalView.sampleCount;
     descriptor.colorAttachments[0].pixelFormat = self.colorPixelFormat;
     descriptor.depthAttachmentPixelFormat = self.depthStencilPixelFormat;
     
@@ -143,7 +143,7 @@
     MTLRenderPipelineDescriptor *descriptor = [MTLRenderPipelineDescriptor new];
     descriptor.vertexFunction = [self.library newFunctionWithName:@"quad_vertex_main"];
     descriptor.fragmentFunction = [self.library newFunctionWithName:@"tonemap_fragment_main"];
-    descriptor.sampleCount = self.metalView.sampleCount;
+    descriptor.rasterSampleCount = self.metalView.sampleCount;
     descriptor.colorAttachments[0].pixelFormat = self.metalView.colorPixelFormat;
     
     self.tonemapPipelineState = [self.device newRenderPipelineStateWithDescriptor:descriptor error:&error];
@@ -604,9 +604,9 @@
     [self encodeTonemappingPass:commandBuffer];
 
     [commandBuffer addCompletedHandler:^(id<MTLCommandBuffer> buffer) {
-        dispatch_async(dispatch_get_main_queue(), ^{
+        //dispatch_async(dispatch_get_main_queue(), ^{
             [self.renderer signalFrameCompletion];
-        });
+        //});
     }];
     
     [commandBuffer commit];

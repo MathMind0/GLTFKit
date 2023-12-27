@@ -16,8 +16,8 @@
 
 #import "GLTFAnimation.h"
 #import "GLTFAccessor.h"
-#import "GLTFBufferView.h"
-#import "GLTFBuffer.h"
+#import <GLTFBufferView.h>
+#import <GLTFBuffer.h>
 #import "GLTFNode.h"
 
 @implementation GLTFAnimationSampler

@@ -177,7 +177,7 @@ vertex VertexOut vertex_main(VertexIn in [[stage_in]],
         #if VERTEX_COLOR_IS_RGB
             out.color = float4(in.color, 1);
         #else
-            out.color = in.color;
+            out.color = float4(in.color);
         #endif
     #endif
     
@@ -333,7 +333,7 @@ fragment half4 fragment_main(VertexOut in [[stage_in]],
     #endif
 
     #if HAS_VERTEX_COLOR
-        baseColor *= half4(in.color);
+        //baseColor *= half4(in.color);
     #endif
     
     #if MATERIAL_IS_UNLIT

@@ -14,7 +14,7 @@
 //  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
-#import "GLTFBufferView.h"
+#import <GLTFBufferView.h>
 
 @implementation GLTFBufferView
 

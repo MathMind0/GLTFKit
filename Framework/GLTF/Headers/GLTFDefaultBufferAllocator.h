@@ -14,9 +14,9 @@
 //  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
-@import Foundation;
+#import <Foundation/Foundation.h>
 
-#import "GLTFBufferAllocator.h"
+#import <GLTF/GLTFBufferAllocator.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

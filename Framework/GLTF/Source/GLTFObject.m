@@ -14,7 +14,7 @@
 //  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 //
 
-#import "GLTFObject.h"
+#import <GLTFObject.h>
 
 @implementation GLTFObject
 

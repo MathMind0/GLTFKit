@@ -15,7 +15,7 @@
 //
 
 @import Cocoa;
-@import simd;
+#import <simd/simd.h>
 
 @interface GLTFViewerCamera: NSObject
 

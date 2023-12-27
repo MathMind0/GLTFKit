@@ -17,7 +17,7 @@
 #import <GLTF/GLTF.h>
 
 @import Metal;
-@import simd;
+#import <simd/simd.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

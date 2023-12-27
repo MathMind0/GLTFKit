@@ -17,8 +17,8 @@
 #import "GLTFMesh.h"
 #import "GLTFVertexDescriptor.h"
 #import "GLTFAccessor.h"
-#import "GLTFBufferView.h"
-#import "GLTFUtilities.h"
+#import <GLTFBufferView.h>
+#import <GLTFUtilities.h>
 
 @implementation GLTFMesh
 @end

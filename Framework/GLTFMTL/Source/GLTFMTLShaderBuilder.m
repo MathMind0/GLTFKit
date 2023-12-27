@@ -68,7 +68,7 @@
     pipelineDescriptor.vertexDescriptor = vertexDescriptor;
     
     pipelineDescriptor.colorAttachments[0].pixelFormat = colorPixelFormat;
-    pipelineDescriptor.sampleCount = sampleCount;
+    pipelineDescriptor.rasterSampleCount = sampleCount;
 
     if (submesh.material.alphaMode == GLTFAlphaModeBlend) {
         pipelineDescriptor.colorAttachments[0].blendingEnabled = YES;
@@ -234,7 +234,7 @@
         
         vertexDescriptor.layouts[attributeIndex].stride = layout.stride;
         vertexDescriptor.layouts[attributeIndex].stepRate = 1;
-        vertexDescriptor.layouts[attributeIndex].stepFunction = MTLStepFunctionPerVertex;
+        vertexDescriptor.layouts[attributeIndex].stepFunction = MTLVertexStepFunctionPerVertex;
     }
 
     return vertexDescriptor;

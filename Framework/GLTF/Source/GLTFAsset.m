@@ -18,9 +18,9 @@
 #import "GLTFAnimation.h"
 #import "GLTFAccessor.h"
 #import "GLTFBinaryChunk.h"
-#import "GLTFBuffer.h"
-#import "GLTFBufferAllocator.h"
-#import "GLTFBufferView.h"
+#import <GLTFBuffer.h>
+#import <GLTFBufferAllocator.h>
+#import <GLTFBufferView.h>
 #import "GLTFCamera.h"
 #import "GLTFExtensionNames.h"
 #import "GLTFImage.h"
@@ -32,9 +32,9 @@
 #import "GLTFTextureSampler.h"
 #import "GLTFScene.h"
 #import "GLTFSkin.h"
-#import "GLTFUtilities.h"
+#import <GLTFUtilities.h>
 
-@import simd;
+#import <simd/simd.h>
 
 #define USE_AGGRESSIVE_ALIGNMENT 0
 

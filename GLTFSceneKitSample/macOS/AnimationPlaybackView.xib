@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="22155" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22155"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,7 +23,7 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="96"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <visualEffectView appearanceType="vibrantDark" fixedFrame="YES" blendingMode="behindWindow" material="appearanceBased" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="9Mq-Qk-BNf">
+                <visualEffectView appearanceType="vibrantDark" fixedFrame="YES" blendingMode="behindWindow" material="contentBackground" state="followsWindowActiveState" translatesAutoresizingMaskIntoConstraints="NO" id="9Mq-Qk-BNf">
                     <rect key="frame" x="0.0" y="-1" width="480" height="97"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <subviews>
@@ -59,7 +60,7 @@
                                 <action selector="didSelectMode:" target="-2" id="A7R-R0-Kvu"/>
                             </connections>
                         </segmentedControl>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LeB-Tg-Raz">
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LeB-Tg-Raz">
                             <rect key="frame" x="413" y="23" width="44" height="17"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="left" title="88.88" id="7f6-IK-w7j">
@@ -76,7 +77,7 @@
                                 <action selector="progressValueDidChange:" target="-2" id="imG-et-UgC"/>
                             </connections>
                         </slider>
-                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hOg-BW-amg">
+                        <button wantsLayer="YES" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hOg-BW-amg">
                             <rect key="frame" x="14" y="13" width="60" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <buttonCell key="cell" type="push" bezelStyle="rounded" image="NSTouchBarPlayPauseTemplate" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="eHw-Cb-R89">
@@ -87,7 +88,7 @@
                                 <action selector="didClickPlayPause:" target="-2" id="8hK-UU-FZ6"/>
                             </connections>
                         </button>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cHP-qA-B8k">
+                        <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cHP-qA-B8k">
                             <rect key="frame" x="74" y="23" width="44" height="17"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="88.88" id="SC5-lX-I4M">
@@ -110,6 +111,6 @@
         </customView>
     </objects>
     <resources>
-        <image name="NSTouchBarPlayPauseTemplate" width="23" height="30"/>
+        <image name="NSTouchBarPlayPauseTemplate" width="28" height="17"/>
     </resources>
 </document>
